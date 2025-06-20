@@ -1,14 +1,18 @@
 # ZMK Miryoku-inspired firmware for the TOTEM keyboard
 
-<figure>
-<img src="./keymap.svg" alt="Miryoku inspired keymap for TOTEM keyboard, showing all six layers" width="100%" />
-<figcaption>Keyboard layout for all layers and combos</figcaption>
-</figure>
+This is a ZMK firmware for a [TOTEM keyboard](https://github.com/GEIGEIGEIST/TOTEM).
 
-This is a ZMK firmware for a [TOTEM keyboard](https://github.com/GEIGEIGEIST/TOTEM), using a keymap that is pretty much copied from both the great [Miryoku layout](https://github.com/manna-harbour/miryoku_zmk), and [urob's ZMK config](https://github.com/urob/zmk-config). I use the alternate hand layout of most of the layers (so that the layer key and modifiers are on one hand, and the main keys of that layout on the other), but combine that with urob's idea of having symbols as combos. I have also adopted his "Timer-less home row mods", which work really well and avoid the usual drawbacks of home row mods.
+The original keymap is copied from [BSAG's config](https://github.com/bsag/zmk-config-bsag), which in turn is based on both the great [Miryoku layout](https://github.com/manna-harbour/miryoku_zmk), and [urob's ZMK config](https://github.com/urob/zmk-config). At this point it is a bit difficult to say how much of the original configs is left. 
 
-Caps word is activated by tapping both home row index finger keys, and as I find it easier to have a dedicated shift key for capitalising words, I have a one-shot shift key on the inner left thumb key, and use that for capitalisation and the home row shift for keyboard shortcut combos.
+Some features and design choices:
 
-Having all the mods in the home row makes it pretty easy to mash a bunch of them to get Hyper (Shift + Command + Option + Control) or Meh (Shift + Option + Control), but --- just because I can --- I have the index and middle finger keys on the bottom row as Hyper and Meh mod taps too. That makes it very easy to create useful keyboard shortcuts for global OS use without any fear of clashes.
+- [ColemakDHm](https://colemakmods.github.io/mod-dh/) alpha layout.
+- Alternate hand layout for most of the layers (so that the layer key and modifiers are on one hand, and the main keys of that layout on the other).
+- Combine symbol layers with urob's idea of having symbols as combos. 
+- "Timer-less home row mods", which work really well and avoid the usual drawbacks of home row mods.
+- Caps word, which is activated by tapping both home row index finger keys.
 
-Finally, the extra outer pinky key is used for previous/next tab, back/forward in navigation history, and parens in the number layer. I tend not to hit those keys accidentally as they are way out there, but it is useful to have dedicated and spatially organised keys for common navigation stuff.
+- Having all the mods in the home row makes it pretty easy to mash a bunch of them to get Hyper (Shift + Command + Option + Control) or Meh (Shift + Option + Control), but --- just because I can --- the index and middle finger keys on the bottom row serve as Hyper and Meh mod taps too. That makes it very easy to create useful keyboard shortcuts for global OS use without any fear of clashes.
+
+- Pressing any key wakes the Totem from soft sleep. 
+

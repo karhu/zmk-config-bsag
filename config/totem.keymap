@@ -24,6 +24,10 @@
 #define BACK &kp LG(LBKT)
 #define FWD &kp LG(RBKT)
 
+// Navigation bindings for next/previous desktop on OSX. 
+#define NEXT_DESK &kp LC(LEFT)
+#define PREV_DESK &kp LC(RIGHT)
+
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
 #define MEH LS(LC(LALT))
@@ -112,20 +116,20 @@
 //              ┣━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
                   &hml LCTRL A   &hml LALT R    &hml LGUI S    &hml LSHFT T    &kp G           &kp M        &hmr RSHFT N   &hmr RGUI E      &hmr LALT I    &hmr RCTRL O
 // ┏━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━┓
-     &kp TAB      &kp Z          &kp X          &hml MEH C     &hml HYP D      &kp V           &kp K        &hmr HYP H     &hmr_meh MEH 0   &dot_morph     &qexcl          &kp TAB
+     PREV_DESK    &kp Z          &kp X          &hml MEH C     &hml HYP D      &kp V           &kp K        &hmr HYP H     &hmr_meh MEH 0   &dot_morph     &qexcl          NEXT_DESK
 // ┗━━━━━━━━━━━━┻━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━┛
-                                                &lt UTIL ESC   &lt NAV SPACE   &sk LSHFT       &kp RET      &lt NUM BSPC   &lt FUN DEL
+                                                &lt UTIL ESC   &lt NAV SPACE   &kp TAB       &kp RET      &lt NUM BSPC   &lt FUN DEL
 //                                            ┗━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━┻━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━┛
             >;
         };
         nav_layer { 
             bindings = <
 //              ┏━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┓  ┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
-                  ___            ___            ___            ___             ___             ___          &kp HOME       &kp UP           &kp END        &kp PAGE_UP 
+                  ___            ___            ___            ___             ___             ___          &kp HOME       ___              &kp END        &kp PAGE_UP 
 //              ┣━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
-                  &kp LCTRL      &kp LALT       &kp LGUI       &kp LSHFT       ___             ___          &kp LEFT       &kp DOWN         &kp RIGHT      &kp PAGE_DOWN
+                  &kp LCTRL      &kp LALT       &kp LGUI       &kp LSHFT       ___             ___          &kp LEFT       &kp UP           &kp RIGHT      &kp PAGE_DOWN
 // ┏━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━┓
-     BACK         ___            ___            &kp MEH        &kp HYP         ___             ___          &kp TILDE      ___              &kp FSLH       ___             FWD
+     BACK         ___            ___            &kp MEH        &kp HYP         ___             ___          &kp TILDE      &kp DOWN         &kp FSLH       ___             FWD
 // ┗━━━━━━━━━━━━┻━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━┫  ┣━━━━━━━━━━━━╋━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━┛
                                                 ___            ___             ___             &kp RET      &kp BSPC       &kp DEL
 //                                            ┗━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━┻━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━┛
