@@ -25,8 +25,8 @@
 #define FWD &kp LG(RBKT)
 
 // Navigation bindings for next/previous desktop on OSX. 
-#define NEXT_DESK &kp LC(LEFT)
-#define PREV_DESK &kp LC(RIGHT)
+#define NEXT_DESK &kp LC(RIGHT)
+#define PREV_DESK &kp LC(LEFT)
 
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
